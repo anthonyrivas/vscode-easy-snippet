@@ -227,7 +227,7 @@ class SnippetNodeProvider {
 				if (k[0] != ' ') k = Array.from(k).fill(' ').join();
 			}
 		}
-		if (languageId == 'javascript')
+		if (languageId == 'javascript' || languageId == 'typescript')
 			text += "/* eslint-disable */\n";
 		text += "\n";
 		if (snippet.body instanceof Array)
